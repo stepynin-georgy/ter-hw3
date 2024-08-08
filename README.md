@@ -79,6 +79,7 @@ variable "each_vm" {
 4. Используйте функцию file в local-переменной для считывания ключа ~/.ssh/id_rsa.pub и его последующего использования в блоке metadata, взятому из ДЗ 2.
 
 for_each_vm.tf: ```metadata = var.vm_ssh_root_key```
+
 variables.tf: ```variable "vm_ssh_root_key" {
   type        = map(string)
   default = {
