@@ -80,14 +80,17 @@ variable "each_vm" {
 
 for_each_vm.tf: ```metadata = var.vm_ssh_root_key```
 
-variables.tf: ```variable "vm_ssh_root_key" {
+variables.tf: 
+```
+variable "vm_ssh_root_key" {
   type        = map(string)
   default = {
       serial-port-enable = 1
       ssh-keys           = "ubuntu:ssh-ed25519 <key>"
   }
   description = "ssh-keygen -t ed25519"
-}```
+}
+```
 
   
 5. Инициализируйте проект, выполните код.
