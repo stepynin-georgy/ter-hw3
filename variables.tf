@@ -67,7 +67,7 @@ variable "vm_ssh_root_key" {
   type        = map(string)
   default = {
       serial-port-enable = 1
-      ssh-keys           = "ubuntu:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFA6w26woMM8N8kifMZBGG1B3iMaxxSROyKOkZ2qiSPW root@netology"
+      ssh-keys           = "ubuntu:ssh-ed25519 <ssh-key>"
   }
   description = "ssh-keygen -t ed25519"
 }
